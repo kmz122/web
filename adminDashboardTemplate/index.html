@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Admin Dashboard</title>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <input type="checkbox" name="" id="menu-toggle" />
+
+
+      <div class="sidebar">
+        <div class="brand">
+          <h3>
+            <span class="lab la-untappd"></span>
+            Pacers
+          </h3>
+        </div>
+
+        <div class="profile-card">
+          <div class="profile-img"></div>
+          <div class="profile-info">
+            <h2>Kyi Myo Zaw</h2>
+            <small>Web Developer</small>
+          </div>
+          <div class="profile-action">
+            <a href="" class="btn btn-white">
+              <span class="las la-coins"></span>
+              $2,300
+            </a>
+          </div>
+          <div class="profile-icons">
+            <span class="las la-user"></span>
+            <span class="las la-comment-alt"></span>
+            <span class="las la-file-invoice"></span>
+          </div>
+        </div>
+
+        <div class="sidebar-menu">
+          <div class="menu-item">
+            <a href="" class="active">
+              <span class="las la-home"></span>
+              <span>Home</span>
+            </a>
+          </div>
+
+          <div class="menu-item">
+            <a href="">
+              <span class="las la-project-diagram"></span>
+              <span>Projects</span>
+            </a>
+          </div>
+
+          <div class="menu-item">
+            <a href="">
+              <span class="las la-tasks"></span>
+              <span>Task</span>
+            </a>
+          </div>
+
+          <div class="menu-item">
+            <a href="">
+              <span class="las la-columns"></span>
+              <span>Kanban</span>
+            </a>
+          </div>
+
+          <div class="menu-item">
+            <a href="">
+              <span class="las la-users-cog"></span>
+              <span>Users</span>
+            </a>
+          </div>
+
+          <div class="menu-item">
+            <a href="">
+              <span class="las la-user-ninja"></span>
+              <span>Profile</span>
+            </a>
+          </div>
+
+          <div class="menu-item">
+            <a href="">
+              <span class="las la-file-invoice"></span>
+              <span>Invioce</span>
+            </a>
+          </div>
+
+          <div class="menu-item">
+            <a href="">
+              <span class="las la-cogs"></span>
+              <span>Widgets</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="sidebar-card">
+          <h3>Hello Parker</h3>
+          <p>
+            You are yet to complete certain tasks that are assigned and haven't
+            update the product manager of your current status quo
+          </p>
+          <a href="" class="btn btn-block btn-white">Get Started</a>
+        </div>
+      </div>
+
+      
+      <div class="main-content">
+        <header>
+          <label for="menu-toggle">
+            <span class="las la-bars"></span>
+          </label>
+
+          <div class="head-icons">
+            <span class="las la-search"></span>
+            <span class="las la-comment-alt"></span>
+            <span class="las la-bell"></span>
+            <div class="head-avatar">
+              <div class="avatar"></div>
+              <span>John Doe</span>
+            </div>
+          </div>
+        </header>
+
+        <main>
+          <div class="page-header">
+            <h1>Morning Kyi</h1>
+            <small>Have a nice day</small>
+          </div>
+          
+          <div class="analytics">
+            <div class="card engage-card">
+              <div class="card-head">
+                Engagement
+              </div>
+              <div class="card-body">
+                <div class="chart-wrapper">
+                  <div id="chart"></div>
+                </div>
+
+              </div>
+            </div>
+            <div class="card emails-card">
+              <div class="card-head">
+                Emails sent
+              </div>
+
+              <div class="card-body">
+                <div id="chart-radial">
+                </div>
+              </div>
+
+              <div class="card-footer">
+                <div class="emails-info">
+                  <div class="email-stat">
+                    <span class="status bg-danger"></span>
+                    <span>30 not sent</span>
+                  </div>
+                  <div class="email-stat">
+                    <span class="status bg-warning"></span>
+                    <span>38 opened</span>
+                  </div>
+                  <div class="email-stat">
+                    <span class="status bg-success"></span>
+                    <span>68 success</span>
+                  </div>
+                  <div class="email-stat">
+                    <span class="status bg-danger"></span>
+                    <span>SMTP error</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-2">
+            <!-- <div class="card team-progress"> -->
+              <div class="card">
+              <div class="card-head">
+                <div class="team-head">
+                  <div>
+                    <h3>Team progress</h3>
+                    <small>890, 344 sales</small>
+                  </div>
+                  <select name="" id="">
+                    <option value="">User</option>
+                  </select>
+
+                </div>
+              </div>
+              <div class="card-body">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Author</th>
+                      <th>Company</th>
+                      <th width="22%">Progress</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      
+                      <td>
+                        <div class="team-info">
+                          <div class="team-img">
+                            <img src="./images/1.svg" alt="">
+                          </div>
+                          <div class="team-details">
+                            <h4>Brad Simmons</h4>
+                            <small>HTML, JS, ReactJS</small>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="company-info">
+                          <h4>Interco</h4>
+                          <small>Web UI/UX Design</small>
+                        </div>
+                      </td>
+                      <td>
+                      <!-- <td width="20%"> -->
+                        <div class="team-progress">
+                          <h4>65%</h4>
+                          <div class="progress-bar">
+                            <div class="indicator info" style="width: 65%;"> </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <a href="" class="btn btn-main">View</a>
+                      </td>
+                    </tr>
+
+                    
+                    <tr>
+                      
+                      <td>
+                        <div class="team-info">
+                          <div class="team-img">
+                            <img src="./images/2.svg" alt="">
+                          </div>
+                          <div class="team-details">
+                            <h4>Jassic Clarkson</h4>
+                            <small>HTML, JS, ReactJS</small>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="company-info">
+                          <h4>Agoda</h4>
+                          <small>Houses & Hostles</small>
+                        </div>
+                      </td>
+                      <td>
+                      <!-- <td width="20%"> -->
+                        <div class="team-progress">
+                          <h4>85%</h4>
+                          <div class="progress-bar">
+                            
+                            <div class="indicator success" style="width: 85%;"> </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <a href="" class="btn btn-main">View</a>
+                      </td>
+                    </tr>
+
+                    
+                    <tr>
+                      
+                      <td>
+                        <div class="team-info">
+                          <div class="team-img">
+                            <img src="./images/3.svg" alt="">
+                          </div>
+                          <div class="team-details">
+                            <h4>John Doe</h4>
+                            <small>HTML, JS, ReactJS</small>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="company-info">
+                          <h4>Spacing</h4>
+                          <small>Web UI/UX Design</small>
+                        </div>
+                      </td>
+                      <td>
+                      <!-- <td width="20%"> -->
+                        <div class="team-progress">
+                          <h4>40%</h4>
+                          <div class="progress-bar">
+                            
+                            <div class="indicator warning" style="width: 40%;"> </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <a href="" class="btn btn-main">View</a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      
+                      <td>
+                        <div class="team-info">
+                          <div class="team-img">
+                            <img src="./images/4.svg" alt="">
+                          </div>
+                          <div class="team-details">
+                            <h4>John Wick</h4>
+                            <small>HTML, JS, ReactJS</small>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="company-info">
+                          <h4>Cleanx</h4>
+                          <small>Web UI/UX Design</small>
+                        </div>
+                      </td>
+                      <td>
+                      <!-- <td width="20%"> -->
+                        <div class="team-progress">
+                          <h4>25%</h4>
+                          <div class="progress-bar">
+                            
+                            <div class="indicator danger" style="width: 25%;"> </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <a href="" class="btn btn-main">View</a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      
+                      <td>
+                        <div class="team-info">
+                          <div class="team-img">
+                            <img src="./images/5.svg" alt="">
+                          </div>
+                          <div class="team-details">
+                            <h4>John Snow</h4>
+                            <small>HTML, JS, ReactJS</small>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="company-info">
+                          <h4>FireKingx</h4>
+                          <small>Web UI/UX Design</small>
+                        </div>
+                      </td>
+                      <td>
+                      <!-- <td width="20%"> -->
+                        <div class="team-progress">
+                          <h4>90%</h4>
+                          <div class="progress-bar">
+                            
+                            <div class="indicator success" style="width: 90%;"> </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <a href="" class="btn btn-main">View</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="card competitors">
+              <div class="card-head">
+                <div class="team-head">
+                  <div>
+                    <h4>My Competitors</h4>
+                    <small>More than 400+ new memebers</small>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="compete-info">
+                  <div>
+                    <img src="./images/competitor_1.jpg" alt="">
+                    <div class="compete-details">
+                      <h4>Flowloves</h4>
+                      <small>Study highway types</small>
+                      <p>By: <a href="">Code resource</a></p>
+                    </div>
+                  </div>
+                  <div class="compete-sales">
+                    <h3>24,900</h3>
+                    <span>Sales</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <div class="compete-info">
+                  <div>
+                    <img src="./images/competitor_2.jpg" alt="">
+                    <div class="compete-details">
+                      <h4>Love Lib</h4>
+                      <small>Study highway types</small>
+                      <p>By: <a href="">Code resource</a></p>
+                    </div>
+                  </div>
+                  <div class="compete-sales">
+                    <h3>24,900</h3>
+                    <span>Sales</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <div class="compete-info">
+                  <div>
+                    <img src="./images/competitor_3.jpg" alt="">
+                    <div class="compete-details">
+                      <h4>L@parks</h4>
+                      <small>Study highway types</small>
+                      <p>By: <a href="">Code resource</a></p>
+                    </div>
+                  </div>
+                  <div class="compete-sales">
+                    <h3>24,900</h3>
+                    <span>Sales</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <div class="compete-info">
+                  <div>
+                    <img src="./images/competitor_4.jpg" alt="">
+                    <div class="compete-details">
+                      <h4>Ice & Love</h4>
+                      <small>Study highway types</small>
+                      <p>By: <a href="">Code resource</a></p>
+                    </div>
+                  </div>
+                  <div class="compete-sales">
+                    <h3>24,900</h3>
+                    <span>Sales</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <div class="compete-info">
+                  <div>
+                    <img src="./images/competitor_5.jpg" alt="">
+                    <div class="compete-details">
+                      <h4>Tube & Love</h4>
+                      <small>Study highway types</small>
+                      <p>By: <a href="">Code resource</a></p>
+                    </div>
+                  </div>
+                  <div class="compete-sales">
+                    <h3>24,900</h3>
+                    <span>Sales</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    <script>
+      let options = {
+        chart: {
+          type: 'line',
+          height: '280px',
+          fontFamily: "Nunito",
+          toolbar: {
+            show: false,
+          }
+        },
+        stroke: {
+          curve: "smooth",
+          width: 7,
+          colors: ["#6300ff"]
+        },
+        markers:{
+          size:7,
+          colors: ["#6300ff"]
+        },
+        grid: {
+          strokeDashArray: 10,
+        },
+        series: [{
+          name: 'engagement',
+          data: [30,40,35,50,49,60,70,91,125]
+        }],
+        xaxis: {
+          categories: ["Feb","Mar","Apr","May","Jun","Jul","Aug", "Sep","Oct"]
+        }
+      }
+
+      let chart = new ApexCharts(document.querySelector("#chart"), options);
+      chart.render();
+
+      // Radial Bar Chart
+      let optionsRadial = {
+          series: [50],
+          chart: {
+          height: 280,
+          type: 'radialBar',
+        },
+        plotOptions: {
+          radialBar: {
+            hollow: {
+              size: '60%',
+            },
+            dataLabels: {
+              name: {
+                show: false
+              },
+              value: {
+                formatter: function(val) {
+                  return parseInt(val);
+                },
+                color: '#777',
+                fontSize: '40px',
+                fontWeight: 500
+                // show: true,
+              },
+            },
+          },
+        },
+        labels: ['Cricket'],
+        stroke: {
+          lineCap: "round",
+        },
+        fill: {
+          colors:["#ffb100"]
+        },
+      };
+
+      let chartRadial = new ApexCharts(document.querySelector("#chart-radial"), optionsRadial);
+      chartRadial.render();
+    </script>
+  </body>
+</html>
