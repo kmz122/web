@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Product Card</title>
+
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="product-card">
+      <div class="logo-cart">
+        <img
+          class="adidas-logo"
+          src="./images/adidas_logo.svg"
+          alt="adidas_logo"
+        />
+        <i class="bx bx-shopping-bag"></i>
+      </div>
+
+      <div class="main-images">
+        <img
+          class="blue active"
+          src="./images/shoe_blue.webp"
+          alt="blue shoe"
+        />
+        <img class="red" src="./images/shoe_red.webp" alt="red shoe" />
+        <img class="black" src="./images/shoe_black.webp" alt="black shoe" />
+      </div>
+
+      <div class="shoe-details">
+        <span class="shoe_name">Adidas ICON 7 TPU CLEATS</span>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita,
+          nisi.
+        </p>
+        <div class="stars">
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bx-star"></i>
+        </div>
+      </div>
+
+      <div class="color-price">
+        <div class="color-option">
+          <span class="color">Colour:</span>
+          <div class="circles">
+            <span class="circle circle--blue active"></span>
+            <span class="circle circle--red"></span>
+            <span class="circle circle--black"></span>
+          </div>
+        </div>
+
+        <div class="price">
+          <span class="price__num">$49.00</span>
+          <span class="price__letter">Forty nine dollar only</span>
+        </div>
+      </div>
+
+      <div class="btn">
+        <div class="btn-layer"></div>
+        <button type="button">Add to Cart</button>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

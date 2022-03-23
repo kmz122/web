@@ -1,0 +1,204 @@
+/* Google Font Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Setting Body */
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #4ecbff 10%, #9708cc 100%);
+}
+
+/* Brand Logo and Shopping Cart */
+
+.product-card {
+  max-width: 355px;
+  width: 100%;
+  border-radius: 25px;
+  padding: 20px 30px 30px;
+  box-shadow: 0 5px 10px;
+  background-color: #eeeef0;
+}
+
+.product-card .logo-cart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.adidas-logo {
+  height: 3rem;
+  width: 4rem;
+}
+
+.bx-shopping-bag {
+  font-size: 3rem;
+  color: #707070;
+  cursor: pointer;
+  transition: transform 0.3s ease-in, color 0.3s ease;
+}
+
+.bx-shopping-bag:hover {
+  transform: scale(1.3);
+  color: #333;
+}
+
+/* Product Image and Info */
+.main-images {
+  overflow: hidden;
+}
+
+.main-images img {
+  display: none;
+}
+
+.main-images img.active {
+  display: block;
+}
+
+.product-card .main-images img {
+  height: 300px;
+  width: 300px;
+  border-radius: 25px;
+  margin-top: 1rem;
+  transform: rotate(18deg);
+  object-fit: cover;
+  z-index: -22;
+}
+
+.shoe_name {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #161616;
+}
+
+.shoe-details p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #333;
+  text-align: justify;
+}
+
+.stars i {
+  margin: 0 -1px;
+  color: #333;
+}
+
+/* Colour and Price */
+.color-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.color-option {
+  display: flex;
+  align-items: center;
+}
+
+.circles {
+  display: flex;
+}
+
+.color {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+  margin-right: 8px;
+}
+
+.circle {
+  height: 1.1rem;
+  width: 1.1rem;
+  border-radius: 50%;
+  margin: 0 0.3rem;
+}
+
+.circle--blue {
+  background-color: blue;
+}
+
+.circle--red {
+  background-color: red;
+}
+
+.circle--black {
+  background-color: black;
+}
+
+.circle--blue.active {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px blue;
+}
+
+.circle--red.active {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px red;
+}
+
+.circle--black.active {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px black;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.price__num {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #757575;
+}
+
+.price__letter {
+  font-size: 0.65rem;
+  font-weight: 400;
+  color: #868686;
+}
+
+/* Button */
+.btn {
+  position: relative;
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 25px;
+  margin-top: 1.5rem;
+  overflow: hidden;
+}
+
+.btn-layer {
+  position: absolute;
+  height: 100%;
+  width: 300%;
+  left: -100%;
+  border-radius: 25px;
+  background-image: linear-gradient(135deg, #9708cc, #4ecbff, #9708cc, #4ecbff);
+  transition: all 0.4s ease;
+}
+
+.btn:hover .btn-layer {
+  left: 0;
+}
+
+.btn button {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+}
