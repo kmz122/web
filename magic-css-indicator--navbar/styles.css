@@ -1,0 +1,143 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: var(--bg-color-main);
+  color: white;
+}
+
+.nav-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.navbar-container {
+  background-color: white;
+  display: inline-block;
+  border-radius: var(--navbar-border-radius);
+  /* box-shadow: 0 0 .5rem whitesmoke; */
+  padding: 0 var(--navbar-padding-horizon);
+}
+
+:root {
+  /* --length: 1;
+  --deg-to-rotate: calc((var(--length) + 2) * -1deg); */
+  --bg-color-main: #333;
+  /* --icon-size: calc(var(--length) * 1rem); */
+  --icon-size: 2rem;
+  --icon-font-size: calc(var(--icon-size) * 0.4);
+  --nav-item-padding: calc(var(--icon-size) * 0.15);
+  --nav-icon-padding: calc((var(--icon-size)) / 4);
+  --icon-text-bottom: calc(var(--icon-size) / 10);
+  --magic-spacing: calc((var(--icon-size)) / 6);
+  --navbar-padding-horizon: calc(var(--icon-size) * 0.75);
+  --navbar-border-radius: calc(var(--icon-size) * 0.25);
+}
+
+.nav-items {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-items a {
+  color: var(--bg-color-main);
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.nav-items .text {
+  font-size: var(--icon-font-size);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 500ms ease-in-out;
+  position: absolute;
+  bottom: var(--icon-text-bottom);
+}
+
+.nav-items a {
+  padding: 0 var(--nav-item-padding);
+}
+
+.nav-items .icon {
+  padding: var(--nav-icon-padding);
+}
+
+.nav-items .icon svg {
+  fill: currentColor;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  display: block;
+}
+
+.nav-items .active .text {
+  pointer-events: all;
+  opacity: 1;
+  display: block;
+}
+
+.nav-items .active .icon {
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.nav-items .active .icon::after,
+.nav-items .active .icon::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.nav-items .active .icon::after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(113, 226, 113);
+}
+
+.nav-items .active .icon::before {
+  width: calc(100% + var(--magic-spacing));
+  height: calc(100% + var(--magic-spacing));
+  transform: translate(-20%, -20%);
+  background-color: var(--bg-color-main);
+}
+
+.nav-items .active a::before,
+.nav-items .active a::after {
+  content: "";
+  position: absolute;
+  width: calc(var(--magic-spacing) * 2);
+  height: calc(var(--magic-spacing) * 2);
+  top: calc(-0.48 * var(--magic-spacing));
+  background-color: transparent;
+  border: calc(0.5 * var(--magic-spacing)) solid var(--bg-color-main);
+  z-index: 5;
+}
+
+.nav-items .active a::before {
+  left: calc(-0.89 * var(--magic-spacing));
+  border-top-right-radius: 100%;
+  border-bottom: none;
+  border-left: none;
+}
+
+.nav-items .active a::after {
+  right: calc(-0.89 * var(--magic-spacing));
+  border-top-left-radius: 100%;
+  border-bottom: none;
+  border-right: none;
+}
