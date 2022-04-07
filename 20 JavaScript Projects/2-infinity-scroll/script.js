@@ -7,7 +7,7 @@ let totalImages = 0;
 let photosArray = [];
 
 // Unsplash API
-const photoCount = 30;
+let photoCount = 5; // for initial load
 const apiKey = "pHf9WPAIk7Fo2uGVw69fuEKAVGKdSTDM4NqTSDcb1BM";
 const apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${photoCount}`;
 
@@ -17,7 +17,7 @@ function imageLoaded() {
   if (imagesLoaded === totalImages) {
     ready = true;
     loader.hidden = true; // loading only for 1st time
-    // console.log("ready = ", ready);
+    photoCount = 30; // after initial load
   }
 }
 
@@ -64,11 +64,15 @@ function displayPhotos() {
 async function getPhotos() {
   try {
     const response = await fetch(apiUrl);
+
+    if (response.status === 403)
+      throw new Error("Photos request is limited to 50 requests per hour!");
     photosArray = await response.json();
 
     displayPhotos();
   } catch (error) {
     console.log(error);
+    alert(error);
   }
 }
 
