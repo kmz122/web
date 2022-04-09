@@ -105,20 +105,20 @@ const VoiceRSS = {
   },
 };
 
-// function test() {
-//   VoiceRSS.speech({
-//     key: "d7179facf6f24e09ad1cda50d5c9f1f1",
-//     src: "Hello, world!",
-//     hl: "en-us",
-//     v: "Linda",
-//     r: 0,
-//     c: "mp3",
-//     f: "44khz_16bit_stereo",
-//     ssml: false,
-//   });
-// }
 
-// test();
+// Passing Joke to VoiceRSS API
+function tellMe(joke) {
+  VoiceRSS.speech({
+    key: "d7179facf6f24e09ad1cda50d5c9f1f1",
+    src: joke,
+    hl: "en-us",
+    v: "Linda",
+    r: 0,
+    c: "mp3",
+    f: "44khz_16bit_stereo",
+    ssml: false,
+  });
+}
 
 // Get Joke from Joke API
 async function getJokes() {
@@ -131,6 +131,8 @@ async function getJokes() {
 
     if (!data.joke) joke = `${data.setup} ... ${data.delivery}`;
     else joke = data.joke;
+
+    tellMe(joke);
   } catch (error) {
     // Catch Errors Here
     console.log("whoops", error);
